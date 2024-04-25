@@ -1,5 +1,75 @@
 /* npx tailwindcss -i ./src/input.css -o ./src/output.cs */
 
+html {
+  margin: 0px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.75rem;
+  line-height: 1rem
+}
+
+a {
+  display: block
+}
+
+.nav-bar {
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  margin: 0px;
+  align-items: center;
+  justify-content: center
+}
+
+@media (min-width: 640px) {
+  .nav-bar {
+    display: flex
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-bar {
+    display: flex
+  }
+
+  .container {
+    display: flex;
+    justify-content: center
+  }
+}
+
+.nav-container {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+@media (min-width: 1024px) {
+  .nav-container {
+    list-style-type: none
+  }
+}
+
+.nav-link {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: none;
+  padding: 0px;
+  padding: 0.5rem;
+  font-weight: 200;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    display: flex
+  }
+}
+
+.nav-link-apple-icon {
+  display: block
+}
+
 /* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
 /*
@@ -497,7 +567,7 @@ video {
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
-  --tw-contain-style:  ;
+  --tw-contain-style:  
 }
 
 ::backdrop {
@@ -551,5 +621,5 @@ video {
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
-  --tw-contain-style:  ;
+  --tw-contain-style:  
 }
