@@ -1,0 +1,5 @@
+/* npx tailwindcss -i ./src/input.css -o ./src/output.cs */
+@import url(./index.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
