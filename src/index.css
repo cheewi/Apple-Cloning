@@ -13,28 +13,29 @@ a {
 .nav-bar {
     backdrop-filter: blur(2rem);
     @apply 
-    sm:flex justify-center items-center m-0
-    lg:flex justify-center items-center m-0
+    lg:flex lg:justify-center lg:items-center m-0
 }
 .container {
     @apply 
-    lg:flex lg:justify-center;
+    lg:flex lg:justify-center
 }
   
-.nav-container {
+.nav-list {
     @apply 
     lg:list-none flex items-center justify-center m-0;
 }
   
 .nav-link {
     @apply 
-    hidden
-    lg:flex font-extralight text-black p-0 p-2 mr-4 ml-4
+    flex
+    font-extralight text-black p-0 p-2 mr-4 ml-4
+    lg:flex 
 }
 .nav-link-apple-icon { 
     @apply 
     block
 }
+
 
 
 

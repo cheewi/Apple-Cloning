@@ -1,4 +1,4 @@
-/* npx tailwindcss -i ./src/input.css -o ./src/output.cs */
+/* npx tailwindcss -i ./src/input.css -o ./src/output.css */
 
 html {
   margin: 0px;
@@ -14,20 +14,14 @@ a {
 .nav-bar {
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
-  margin: 0px;
-  align-items: center;
-  justify-content: center
-}
-
-@media (min-width: 640px) {
-  .nav-bar {
-    display: flex
-  }
+  margin: 0px
 }
 
 @media (min-width: 1024px) {
   .nav-bar {
-    display: flex
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
 
   .container {
@@ -36,7 +30,7 @@ a {
   }
 }
 
-.nav-container {
+.nav-list {
   margin: 0px;
   display: flex;
   align-items: center;
@@ -44,7 +38,7 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .nav-container {
+  .nav-list {
     list-style-type: none
   }
 }
@@ -52,7 +46,7 @@ a {
 .nav-link {
   margin-right: 1rem;
   margin-left: 1rem;
-  display: none;
+  display: flex;
   padding: 0px;
   padding: 0.5rem;
   font-weight: 200;
