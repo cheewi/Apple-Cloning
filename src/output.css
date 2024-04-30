@@ -389,8 +389,6 @@ header {
 
 /* GRIDDED SECTION */
 
-/* VISION PRO */
-
 .container-grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -412,7 +410,12 @@ header {
   }
 }
 
+.vision-pro {
+  position: relative;
+}
+
 .image-container-grid {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -424,21 +427,15 @@ header {
      object-fit: cover;
 }
 
-.detail-container-grid {
-  position: absolute;
-  height: 100%;
-}
-
 .heading-grid {
   padding-top: 3.4rem;
   font-weight: 500;
   line-height: 1.07143;
   letter-spacing: -0.05rem;
-  text-align: center;
-  font-size: 2.1px
+  font-size: 3.2rem
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .heading-grid {
     font-size: 4rem
   }
@@ -448,13 +445,90 @@ header {
   margin-top: 6px;
   letter-spacing: .008rem;
   font-weight: 300;
-  text-align: center;
   font-size: 1.9rem
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .sub-heading-grid {
     font-size: 3.2rem
+  }
+}
+
+.detail-container-grid {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.inner-container {
+  position: relative;
+}
+
+.button-container-grid {
+  margin-top: 17px
+}
+
+.buy-grid {
+  font-weight: 300;
+  margin-top: 19px;
+  padding: 1rem 2.5rem;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 9999px;
+  font-size: 1.4rem
+}
+
+@media (min-width: 768px) {
+  .buy-grid {
+    font-size: 1.7rem
+  }
+}
+
+.buy-grid:hover {
+  background-color: #0071e3;
+  color: white;
+}
+
+.learn-more-grid {
+  margin: 13px;
+  padding: .5rem 2rem;
+  font-weight: 300;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 9999px;
+  font-size: 1.4rem
+}
+
+.learn-more-grid:hover {
+  background-color: #2b86e2;
+}
+
+.buy
+
+/* VISION PRO */
+#heading-vision > img {
+  height: 32px;
+  width: auto;
+}
+
+#heading-vision {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-container-vision {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30rem
+}
+
+@media (min-width: 1024px) {
+  .detail-container-vision {
+    padding-top: 35rem
   }
 }
 
