@@ -10,16 +10,16 @@
     <header>
         <div class="container">
             <nav class="navigation">
+                <!-- NAV-BAR MOBILE -->
                 <ul class="nav-list nav-list-smaller">
                     <li class="nav-content">
-                        <img src="/images/icons/apple.svg" class="nav-item nav-item-apple-icon">
-                    </li>
-                    
-                    <li class="nav-content">
-                        <img src="/images/icons/search.svg" class="nav-item nav-item-search-icon">
+                        <img src="/images/icons/apple.svg" alt="" class="nav-item nav-item-apple-icon nav-smaller-hidden">
                     </li>
                     <li class="nav-content">
-                        <img src="/images/icons/bag.svg" class="nav-item nav-item-bag-icon">
+                        <img src="/images/icons/search.svg" class="nav-item nav-item-search-icon nav-smaller-hidden">
+                    </li>
+                    <li class="nav-content">
+                        <img src="/images/icons/bag.svg" alt="" class="nav-item nav-item-bag-icon nav-smaller-hidden">
                     </li>
                     <li class="nav-content">
                         <div class="hamburger">
@@ -28,9 +28,10 @@
                         </div>
                     </li>
                 </ul>
+                <!-- NAV-BAR DESKTOP -->
                 <ul class="nav-list nav-list-larger">
-                    <li class="nav-content">
-                        <img src="/images/icons/apple.svg" class="nav-item nav-item-apple-icon nav-item-hidden">
+                    <li class="nav-content nav-content-hidden">
+                        <img src="/images/icons/apple.svg" class="nav-item nav-item-apple-icon">
                     </li>
                     <li class="nav-content">
                         <a href="#" class="nav-item">Store</a>
@@ -54,7 +55,7 @@
                         <a href="#" class="nav-item">Airpods</a>
                     </li>
                     <li class="nav-content">
-                        <a href="#" class="nav-item">TV & Home</a>
+                        <a href="#" class="nav-item" id="nav-tv">TV & Home</a>
                     </li>
                     <li class="nav-content">
                         <a href="#" class="nav-item">Entertainment</a>
@@ -65,10 +66,10 @@
                     <li class="nav-content">
                         <a href="#" class="nav-item">Support</a>
                     </li>
-                    <li class="nav-content">
+                    <li class="nav-content nav-content-hidden">
                         <img src="/images/icons/search.svg" class="nav-item nav-item-search-icon">
                     </li>
-                    <li class="nav-content">
+                    <li class="nav-content nav-content-hidden">
                         <img src="/images/icons/bag.svg" class="nav-item nav-item-bag-icon">
                     </li>
                 </ul>
@@ -133,7 +134,7 @@
                     <img src="/images/vision/promo_apple_vision_pro__f4v4zp0sum2y_large_2x.jpg" alt="">
                 </div>
                 <div class="detail-container-grid detail-container-vision">
-                    <div class="heading-grid" id="heading-vision">
+                    <div class="heading-grid heading-img">
                         <img src="/images/vision/promo_logo_apple_vision_pro__90zi46p7dc2y_large_2x (1).png" alt="">
                     </div>
                     <div class="h3-container">
@@ -150,8 +151,8 @@
                     <img src="/images/macbook-air/macbook-air-m3-large.jpg" alt="">
                 </div>
                 <div class="detail-container-grid">
-                    <h2 class="heading-grid">Vision</h2>
-                    <h3 class="sub-heading-grid">Welcome to the era of computing</h3>
+                    <h2 class="heading-grid">MacBook Air</h2>
+                    <h3 class="sub-heading-grid">Lean.Mean.M3 Machine.</h3>
                     <div class="button-container button-container-grid">
                         <button class="learn-more-grid">Learn more</button>
                         <button class="buy-grid">Buy</button>
@@ -163,8 +164,10 @@
                     <img src="/images/watch-series-9/apple-watch-series-9-large-2x.jpg" alt="">
                 </div>
                 <div class="detail-container-grid">
-                    <h2 class="heading-grid">Vision</h2>
-                    <h3 class="sub-heading-grid">Welcome to the era of computing</h3>
+                    <div class="heading-grid heading-img" id="heading-watch">
+                        <img src="/images/watch-series-9/promo-logo-apple-watch-series-9-large.png" alt="">
+                    </div>
+                    <h3 class="sub-heading-grid sub-heading-white">Smarter. Brighter. Mightier</h3>
                     <div class="button-container button-container-grid">
                         <button class="learn-more-grid">Learn more</button>
                         <button class="buy-grid">Buy</button>
@@ -176,8 +179,8 @@
                     <img src="/images/ipad/ipad-large-2x.jpg" alt="">
                 </div>
                 <div class="detail-container-grid">
-                    <h2 class="heading-grid">Vision</h2>
-                    <h3 class="sub-heading-grid">Welcome to the era of computing</h3>
+                    <h2 class="heading-grid">iPad</h2>
+                    <h3 class="sub-heading-grid">Lovable.Drawable.Magical</h3>
                     <div class="button-container button-container-grid">
                         <button class="learn-more-grid">Learn more</button>
                         <button class="buy-grid">Buy</button>
@@ -189,11 +192,13 @@
                     <img src="/images/card/card-l.jpg" alt="">
                 </div>
                 <div class="detail-container-grid">
-                    <h2 class="heading-grid">Vision</h2>
-                    <h3 class="sub-heading-grid">Welcome to the era of computing</h3>
+                    <div class="heading-grid heading-img">
+                        <img src="/images/card/card-logo-s.png" alt="">
+                    </div>
+                    <h3 class="sub-heading-grid">Get up to 3% Daily Cash back with every purchase.</h3>
                     <div class="button-container button-container-grid">
                         <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
+                        <button class="buy-grid">Apply now</button>
                     </div>
                 </div>
             </div>
@@ -202,11 +207,12 @@
                     <img src="/images/trade-in/trade-in-large-2x.jpg" alt="">
                 </div>
                 <div class="detail-container-grid">
-                    <h2 class="heading-grid">Vision</h2>
-                    <h3 class="sub-heading-grid">Welcome to the era of computing</h3>
+                    <div class="heading-grid heading-img">
+                        <img src="/images/trade-in/logo-trade-in-large.png" alt="">
+                    </div>
+                    <h3 class="sub-heading-grid">Get $170-$630 in credit when you trade in iPhone 11 or higher.</h3>
                     <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
+                        <button class="learn-more-grid">Get your estimate</button>
                     </div>
                 </div>
             </div>
