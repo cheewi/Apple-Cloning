@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+    <title>Apple</title>
+    <script src="./script/index.js" defer></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <nav class="navigation">
-                <!-- NAV-BAR MOBILE -->
-                <ul class="nav-list nav-list-smaller">
+<body class="overflow-x-hidden">
+    <!-- <header class="fixed top-0 w-[100%] h-11 bg-white opacity-70 backdrop-blur-md ">
+        <div>
+            <nav class="relative">
+
+
+                <ul class="p-0 flex mt-0 opacity-100 tab:opacity-0 tab:items-center tab:px-6 tab:justify-center">
                     <li class="nav-content">
                         <img src="/images/icons/apple.svg" alt="" class="nav-item nav-item-apple-icon nav-smaller-hidden">
                     </li>
-                    <li class="nav-content">
-                        <img src="/images/icons/search.svg" class="nav-item nav-item-search-icon nav-smaller-hidden">
-                    </li>
-                    <li class="nav-content">
-                        <img src="/images/icons/bag.svg" alt="" class="nav-item nav-item-bag-icon nav-smaller-hidden">
-                    </li>
-                    <li class="nav-content">
-                        <div class="hamburger">
-                            <span class="line line-top"></span>
-                            <span class="line line-bottom"></span>
-                        </div>
-                    </li>
+                    <div class="right-div flex items-center mr-24">
+                        <li class="nav-content">
+                            <img src="/images/icons/search.svg" class="nav-item nav-item-search-icon nav-smaller-hidden">
+                        </li>
+                        <li class="nav-content">
+                            <img src="/images/icons/bag.svg" alt="" class="nav-item nav-item-bag-icon nav-smaller-hidden">
+                        </li>
+                       
+                    </div>
+                    <div class="hamburger">
+                        <span class="line line-top"></span>
+                        <span class="line line-bottom"></span>
+                    </div>
+                    
                 </ul>
-                <!-- NAV-BAR DESKTOP -->
-                <ul class="nav-list nav-list-larger">
+
+
+                <ul class="nav-list-larger fixed top-0 w-[100%] py-20 px-4 h-0 duration-300 hover:opacity-100 bg-white z-10 opacity-0 p-0 mt-0 active:w-[100%] active:h-[100vh] active:opacity-100 visible tab:opacity-100 tab:visible tab:flex tab:items-center tab:px-6 tab:justify-center">
                     <li class="nav-content nav-content-hidden">
                         <img src="/images/icons/apple.svg" class="nav-item nav-item-apple-icon">
                     </li>
@@ -75,148 +81,32 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <div style="height: 4.4rem;"></div>
-    <!--Apple 2030-->
-        <section class="container-body">
-            <div class="apple-2030">
-                <div class="image-container">
-                    <img src="/images/apple-2023/hero_environment__eo8uw34krxg2_largetall.jpg" alt="apple-2030" class="image-container-apple-2030">
-                </div>
-                <div class="detail-container">
-                    <h2 class="heading heading-apple-2030">Apple 2030</h2>
-                    <h3 class="sub-heading sub-heading-apple-2030">A plan as innovative as our products.</h3>
-                    <div class="button-container">
-                        <button class="learn-more">Learn more</button>
-                    </div>
-                </div>
+    </header> -->
+    <header class="fixed top-0 w-full h-16 bg-white opacity-70 backdrop-blur-md z-40">
+        <div class="navigation relative">
+          <ul class="nav-list flex items-center justify-center p-0 mt-0 tab:opacity-0 tab:items-center tab:px-6 tab:justify-center">
+            <li class="nav-content">
+              <img src="/images/icons/apple.svg" alt="" class="nav-item nav-item-apple-icon w-12 h-16" />
+            </li>
+            <div class="hamburger hidden sm:flex flex-col items-center justify-center cursor-pointer fixed right-6 top-4 z-50">
+              <span class="line line-top absolute w-6 h-1 bg-gray-700 mt-3"></span>
+              <span class="line line-bottom absolute w-6 h-1 bg-gray-700 mt-[-8px]"></span>
             </div>
-        </section>
-        <!--iPhone-->
-        <section class="container-body">
-            <div class="iPhone">
-                <div class="image-container">
-                    <img src="/images/apple-iphone/apple-iphone-large.jpeg" alt="iPhone" class="image-container-iPhone">
-                </div>
-                <div class="detail-container">
-                    <h2 class="heading heading-iphone">iPhone</h2>
-                    <div class="h3-container">
-                        <h3 class="sub-heading sub-heading-iphone">Our most powerful cameras yet. Ultrafast chips. And USB-C.
-                    </div>
-                    </h3>
-                    <div class="button-container">
-                        <button class="learn-more">Learn more</button>
-                        <button class="shop-iphone">Shop iPhone</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--IPHONE 15-->
-        <section class="container-body">
-            <div class="iPhone">
-                <div class="image-container">
-                    <img src="/images/iphone-15/iphone15-large-tall.jpg" alt="iPhone" class="image-container-iPhone">
-                </div>
-                <div class="detail-container">
-                    <h2 class="heading">iPhone 15</h2>
-                    <h3 class="sub-heading">New Camera. New Design. Newphoria.</h3>
-                    <div class="button-container">
-                        <button class="learn-more">Learn more</button>
-                        <button class="buy">Buy</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- GRIDDED SECTION -->
-        <section class="container-grid">
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/vision/promo_apple_vision_pro__f4v4zp0sum2y_large_2x.jpg" alt="">
-                </div>
-                <div class="detail-container-grid detail-container-vision">
-                    <div class="heading-grid heading-img">
-                        <img src="/images/vision/promo_logo_apple_vision_pro__90zi46p7dc2y_large_2x (1).png" alt="">
-                    </div>
-                    <div class="h3-container">
-                        <h3 class="sub-heading-grid">Welcome to the era of Spacial computing</h3>
-                    </div>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/macbook-air/macbook-air-m3-large.jpg" alt="">
-                </div>
-                <div class="detail-container-grid">
-                    <h2 class="heading-grid">MacBook Air</h2>
-                    <h3 class="sub-heading-grid">Lean.Mean.M3 Machine.</h3>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/watch-series-9/apple-watch-series-9-large-2x.jpg" alt="">
-                </div>
-                <div class="detail-container-grid">
-                    <div class="heading-grid heading-img" id="heading-watch">
-                        <img src="/images/watch-series-9/promo-logo-apple-watch-series-9-large.png" alt="">
-                    </div>
-                    <h3 class="sub-heading-grid sub-heading-white">Smarter. Brighter. Mightier</h3>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/ipad/ipad-large-2x.jpg" alt="">
-                </div>
-                <div class="detail-container-grid">
-                    <h2 class="heading-grid">iPad</h2>
-                    <h3 class="sub-heading-grid">Lovable.Drawable.Magical</h3>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Buy</button>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/card/card-l.jpg" alt="">
-                </div>
-                <div class="detail-container-grid">
-                    <div class="heading-grid heading-img">
-                        <img src="/images/card/card-logo-s.png" alt="">
-                    </div>
-                    <h3 class="sub-heading-grid">Get up to 3% Daily Cash back with every purchase.</h3>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Learn more</button>
-                        <button class="buy-grid">Apply now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                <div class="image-container-grid">
-                    <img src="/images/trade-in/trade-in-large-2x.jpg" alt="">
-                </div>
-                <div class="detail-container-grid">
-                    <div class="heading-grid heading-img">
-                        <img src="/images/trade-in/logo-trade-in-large.png" alt="">
-                    </div>
-                    <h3 class="sub-heading-grid">Get $170-$630 in credit when you trade in iPhone 11 or higher.</h3>
-                    <div class="button-container button-container-grid">
-                        <button class="learn-more-grid">Get your estimate</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <script src="/script/index.js"></script>
+          </ul>
+          <ul class="nav-list-larger fixed top-0 w-full h-0 overflow-hidden duration-300 opacity-0 bg-white z-20 p-0 mt-0 active:h-screen active:opacity-100 visible tab:opacity-100 tab:visible tab:flex tab:items-center tab:px-6 tab:justify-center">
+            <li class="nav-content">
+              <img src="/images/icons/apple.svg" alt="" class="nav-item nav-item-apple-icon w-12 h-16" />
+            </li>
+            <li class="nav-content">
+              <img src="/images/icons/search.svg" alt="" class="nav-item nav-item-search-icon w-12 h-16" />
+            </li>
+            <li class="nav-content">
+              <img src="/images/icons/bag.svg" alt="" class="nav-item nav-item-bag-icon w-12 h-16" />
+            </li>
+          </ul>
+        </div>
+      </header>
+      
+
 </body>
 </html>
