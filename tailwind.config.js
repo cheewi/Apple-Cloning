@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {
       screens: { 
-        'mob' : '658px',
-        'tab' : '1024px',
+        'tab' : '833px',
         'des' : '1920px',
       },
       fontFamily: { 
         'apple' : '-apple-system'
       },
+      fontSize: { 
+        '00' : '12px'
+      }
     },
   },
   plugins: [],
