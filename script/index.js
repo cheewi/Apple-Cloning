@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(hamburger)
     hamburger.addEventListener('click', () => {
     console.log(1)
-    selectElement('header').classList.toggle('active')
+    selectElement('nav').classList.toggle('active')
 })
 });
 

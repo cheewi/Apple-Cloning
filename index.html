@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/output.css">
-    <script src="script/index.js"></script>
-    <script src="components/header.js"></script>
+    <link rel="stylesheet" href="./src/css/output.css">
+    <script src="./script/index.js" defer></script>
+    <script src="./components/nav-bar.js" defer></script>
+    <script src="./components/hero-card.js" defer></script>
 </head>
 <body>
     <nav-bar></nav-bar>
-    
+    <div class="h-11"></div>
+    <hero-card 
+        card-size="mb-3 w-full relative h-[500px] tab:h-[650px] des:h-[692px]"
+        image="/images/apple-2023/hero_environment__eo8uw34krxg2_largetall.jpg" alt="apple-2030"
+        detail-position="absolute w-full h-full mx-2 flex flex-col justify-start items-center"
+        heading="Apple 2030"
+        sub-heading="A plan as innovative as our products.">
+    </hero-card>
+    <hero-card 
+        card-size="mb-3 w-full relative h-[500px] tab:h-[650px] des:h-[692px]"
+        image="/images/apple-iphone/apple-iphone-large.jpeg" alt="apple-2030"
+        detail-position="absolute w-full mx-2 h-full flex flex-col justify-start items-center text-white"
+        heading="iPhone"
+        sub-heading="Our most powerful cameras yet. Ultrafast chips. And USB-C.
+        Learn more Shop iPhone">
+    </hero-card>
+    <hero-card 
+        card-size="mb-3 w-full relative h-[500px] tab:h-[650px] des:h-[692px]"
+        image="/images/iphone-15/iphone15-large-tall.jpg" alt="apple-2030"
+        detail-position="absolute mx-2 w-full h-full flex flex-col justify-start items-center"
+        heading="iPhone 15"
+        sub-heading="New Camera. New Design. Newphoria.
+        Learn more Buy">
+    </hero-card>
 </body>
 </html>

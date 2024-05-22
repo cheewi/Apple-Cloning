@@ -5,7 +5,6 @@
 
 @media screen and (max-width: 833px)  { 
     header { 
-        height: 4.8rem;
         transition: background .36s cubic-bezier(0.32, 0.08 , 0.24 , 1),
                     height .56s cubic-bezier(0.32, 0.08 , 0.24 , 1) ;
     }
@@ -18,7 +17,7 @@
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);
         margin-top: 1px;
     }
-
+z
     .active .line-bottom { 
         transform: rotate(-45deg);
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);

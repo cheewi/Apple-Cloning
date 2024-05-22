@@ -1,8 +1,6 @@
 const createHeaderComponent = () => { 
     return `
-    <header class="active:h-[100%] active:bg-white fixed z-40 w-full bg-white bg-opacity-70 backdrop-blur-md">
         <nav class="relative w-full">
-
             <ul class="nav-list-smaller w-full justify-between p-0 m-0 flex items-center opacity-100 tab:absolute tab:px-6 tab:justify-center tab:opacity-0">
                 <div class="flex">
                     <li>
@@ -71,12 +69,16 @@ const createHeaderComponent = () => {
                 </li>
             </ul>
         </nav>
-    </header>
     `;
 };
 
-class headerComponent extends HTMLElement { 
-    connectedCallback() { 
+class headerComponent extends HTMLElement {
+    constructor() {
+        super()
+    }
+
+    connectedCallback() {
+        this.setAttribute('class', 'active:h-[100%] active:bg-white fixed z-40 w-full bg-white bg-opacity-70');
         this.innerHTML = createHeaderComponent();
     }
 };
