@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // ];
 
 // let current = 0;
-// let sliderContainer = document.querySelector('.slider');
-// let pillContainer = document.querySelector('.pill');
+// let slide = document.querySelector('.slider');
+// let pill = document.querySelector('.pill');
 
 // function addImage(imageUrl, index) {
 //   const img = document.createElement('img');
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   img.className = `slide object-cover   ${
 //     index === current ? 'opacity-100' : 'opacity-50'
 //   }`;
-//   sliderContainer.appendChild(img);
+//   slide.appendChild(img);
 // }
 
 // function addPills() {
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //     btn.addEventListener('click', () => {
 //       current = index;
 //       updateSlides();
-//       sliderContainer.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
+//       slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
 //     });
-//     pillContainer.appendChild(btn);
+//     pill.appendChild(btn);
 //   });
 // }
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   if (current > 0) {
 //     current--;
 //     updateSlides();
-//     sliderContainer.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
+//     slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
 //   }
 // };
 
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   if (current < cardArray.length - 1) {
 //     current++;
 //     updateSlides();
-//     sliderContainer.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
+//     slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
 //   }
 // };
 

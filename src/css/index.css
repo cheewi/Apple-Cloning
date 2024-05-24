@@ -15,20 +15,19 @@
     .active .line-top { 
         transform: rotate(45deg);
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);
-        margin-top: 1px;
+        
     }
 z
     .active .line-bottom { 
         transform: rotate(-45deg);
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);
-        margin-top: 0;
     }
     .nav-smaller-hidden { 
-        transition: opacity 2.2s;
+        transition: opacity 1.5s;
     }
     .nav-list-larger { 
         box-sizing: border-box;
-        transition: opacity 2.5s;
+        transition: opacity 1.7s;
         opacity: 0;
         visibility: hidden;
     }

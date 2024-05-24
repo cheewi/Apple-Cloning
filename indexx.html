@@ -224,10 +224,13 @@
             </div>
         </section>
 
+
+    <section>
+        
+    </section>
         <!-- CAROUSEL -->
-    <section class="carousel-container">
-        <div 
-        class="carousel group">
+    <!-- <section class="carousel-container">
+        <div class="carousel group">
             <div class="button-container-carousel group-hover:opacity-100 duration-300 ease-in-out">
                 <button onclick="onPrevClick()" class="button-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -243,9 +246,51 @@
             <div class="pill absolute flex justify-center bottom-4 md:bottom-10 items-center space-x-3 rounded-full z-10"></div>
             <div class="slider flex gap-4 flex-nowrap duration-1000 ease-[cubic-bezier(0.83, 0, 0.17, 1)]"></div>
         </div>
-    </section>
+    </section> 
+        .carousel-container { 
+        @apply
+        w-full 
+        flex 
+        flex-col 
+        items-center 
+        justify-between 
+        overflow-x-hidden
+        mb-10
+        mt-2
+        }
+        .carousel { 
+            @apply
+            relative 
+            w-full 
+            flex 
+            max-w-full
+            items-center 
+            justify-center 
+        }
+        .button-container-carousel { 
+            @apply
+            absolute 
+            flex 
+            justify-between 
+            z-10 
+            text-white 
+            opacity-0
+            h-[100%]
+            w-[100%]
+        }
+        .button-prev svg, 
+        .button-next svg { 
+            @apply
+            md:w-16 
+            md:h-16 
+            w-8 
+            h-8 
+            text-[#ccc] 
+            hover:text-white
+        } -->
+
         
-        <!-- AUTO SCROLL -->
+    <!-- AUTO SCROLL -->
     <section class="auto-scroll">
         <div class="auto-scroll-container">
             <div class="inner-auto-scroll-container" >
