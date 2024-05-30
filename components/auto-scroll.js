@@ -4,45 +4,45 @@ const createAutoScrollComponent = () => {
         <div class="auto-scroll-content whitespace-nowrap animate-scroll" id="auto-scroll-content" >                     
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (1).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (1).jpg" alt="">
                 </div>
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (2).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (2).jpg" alt="">
                 </div>
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (3).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (3).jpg" alt="">
                 </div>
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472.jpg" alt="">
+                    <img src="./images/auto-scroll/834x472.jpg" alt="">
                 </div>
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="images/auto-scroll/834x472 (4).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (4).jpg" alt="">
                 </div>
             </div>
             <!-- repeat -->
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (1).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (1).jpg" alt="">
                 </div>
                 
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (2).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (2).jpg" alt="">
                 </div>
                 
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="/images/auto-scroll/834x472 (3).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (3).jpg" alt="">
                 </div>
                 
             </div>
@@ -53,7 +53,7 @@ const createAutoScrollComponent = () => {
             </div>
             <div class="inline-flex items-center overflow-hidden h-[134px] w-[238px] p-[3px] tab:p-[5px] tab2:p-[8px] tab:h-[161px] tab:w-[286px] tab2:w-[417px] tab2:h-[236px] tab2:py-[20px]">
                 <div class="w-full h-full">
-                    <img src="images/auto-scroll/834x472 (4).jpg" alt="">
+                    <img src="./images/auto-scroll/834x472 (4).jpg" alt="">
                 </div>
             </div>
         </div>

@@ -4,14 +4,14 @@ const createHeaderComponent = () => {
             <ul class="nav-list-smaller w-full justify-between p-0 m-0 flex items-center opacity-100 tab:absolute tab:px-6 tab:justify-center tab:opacity-0">
                 <div class="flex">
                     <li>
-                        <img src="/images/icons/apple.svg" alt="" class="nav-smaller-hidden flex w-12 h-12">
+                        <img src="./images/icons/apple.svg" alt="" class="nav-smaller-hidden flex w-12 h-12">
                     </li>
                     <div class="right-div flex items-center mr-24">
                         <li>
-                            <img src="/images/icons/search.svg" class="nav-smaller-hidden flex w-12 h-12">
+                            <img src="./images/icons/search.svg" class="nav-smaller-hidden flex w-12 h-12">
                         </li>
                         <li>
-                            <img src="/images/icons/bag.svg" alt="" class="nav-smaller-hidden flex w-12 h-12">
+                            <img src="./images/icons/bag.svg" alt="" class="nav-smaller-hidden flex w-12 h-12">
                         </li>
                         
                     </div>
@@ -26,7 +26,7 @@ const createHeaderComponent = () => {
 
             <ul class="nav-list-larger p-0 m-0 fixed top-0 h-0 block bg-white z-20 py-5 tab:opacity-100 tab:flex tab:items-center tab:absolute tab:px-6 justify-center w-full ">
                 <li class=" hidden tab:flex">
-                    <img src="/images/icons/apple.svg" class="flex w-12 h-12">
+                    <img src="./images/icons/apple.svg" class="flex w-12 h-12">
                 </li>
                 <li>
                     <a href="#" class="text-[#1d1d1f] font-semibold leading-tight text-3xl p-0 tab:text-[12px] tab:px-2 tab:py-2 tab:flex tab:font-normal">Store</a>
@@ -62,10 +62,10 @@ const createHeaderComponent = () => {
                     <a href="src/pages/support.html" class="text-[#1d1d1f] font-semibold leading-tight text-3xl p-0 tab:text-[12px] tab:px-2 tab:py-2 tab:flex tab:font-normal">Support</a>
                 </li>
                 <li class=" hidden tab:flex">
-                    <img src="/images/icons/search.svg" class="flex w-12 h-12">
+                    <img src="./images/icons/search.svg" class="flex w-12 h-12">
                 </li>
                 <li class=" hidden tab:flex">
-                    <img src="/images/icons/bag.svg" class="flex w-12 h-12">
+                    <img src="./images/icons/bag.svg" class="flex w-12 h-12">
                 </li>
             </ul>
         </nav>
