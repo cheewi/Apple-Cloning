@@ -2,121 +2,157 @@
 document.addEventListener('DOMContentLoaded', () => {
     const selectElement = (element) => document.querySelector(element);
     const hamburger = selectElement('.hamburger')
-    console.log(hamburger)
     hamburger.addEventListener('click', () => {
-    console.log(1)
     selectElement('nav').classList.toggle('active')
-})
+  })
 });
-
-
-// const autoScroll = document.querySelector('.auto-scroll-content');
-// const playButton = document.getElementById('cute-button');
-// let isAnimating = true; 
-// const buttonPause = document.getElementById('button2')
-// const buttonPlay = document.getElementById('button1')
-// playButton.addEventListener('click', () => {
-//   if (isAnimating) {
-//     autoScroll.style.animationPlayState = 'paused'; 
-//     isAnimating = false;
-//     buttonPause.style.display = 'flex'
-//     buttonPlay.style.display = 'none'
-//   } else {
-//     autoScroll.style.animationPlayState = 'running'; 
-//     isAnimating = true;
-//     buttonPause.style.display = 'none'
-//     buttonPlay.style.display = 'flex'
-//   }
-// });
-
-// })
-
 // carousel 
 
-// const cardArray = [
-//   'images/carousel/argylle/argylle-1250x703.jpg',
-//   'images/carousel/franklin/1250x703.jpg',
-//   'images/carousel/friday-night-baseball/1250x703.jpg',
-//   'images/carousel/masters-of-the-air/1250x703.jpg',
-//   'images/carousel/mls-season-pass/mls-season-pass-1250x703.jpg',
-//   'images/carousel/morning-show/1250x703.jpg',
-//   'images/carousel/palm-royale/1250x703.jpg',
-//   'images/carousel/sugar/1250x703.jpg',
-//   'images/carousel/ted-lasso/1250x703.jpg',
-//   'images/carousel/argylle/argylle-1250x703.jpg',
-//   'images/carousel/franklin/1250x703.jpg',
-//   'images/carousel/friday-night-baseball/1250x703.jpg',
-//   'images/carousel/masters-of-the-air/1250x703.jpg',
-//   'images/carousel/mls-season-pass/mls-season-pass-1250x703.jpg',
-//   'images/carousel/morning-show/1250x703.jpg',
-//   'images/carousel/palm-royale/1250x703.jpg',
-//   'images/carousel/sugar/1250x703.jpg',
-//   'images/carousel/ted-lasso/1250x703.jpg'
-// ];
+const largeImages = [
+    'images/carousel/argylle/argylle-1250x703.jpg',
+    'images/carousel/franklin/1250x703.jpg',
+    'images/carousel/friday-night-baseball/1250x703.jpg',
+    'images/carousel/masters-of-the-air/1250x703.jpg',
+    'images/carousel/mls-season-pass/mls-season-pass-1250x703.jpg',
+    'images/carousel/morning-show/1250x703.jpg',
+    'images/carousel/palm-royale/1250x703.jpg',
+    'images/carousel/sugar/1250x703.jpg',
+    'images/carousel/ted-lasso/1250x703.jpg'
+];
 
-// let current = 0;
-// let slide = document.querySelector('.slider');
-// let pill = document.querySelector('.pill');
+const mediumImages = [
+    'images/carousel/argylle/argylle-689x387.jpg',
+    'images/carousel/franklin/689x387.jpg',
+    'images/carousel/friday-night-baseball/689x387.jpg',
+    'images/carousel/masters-of-the-air/689x387.jpg',
+    'images/carousel/mls-season-pass/mls-season-pass-689x387.jpg',
+    'images/carousel/morning-show/689x387.jpg',
+    'images/carousel/palm-royale/689x387.jpg',
+    'images/carousel/sugar/689x387.jpg',
+    'images/carousel/ted-lasso/689x387.jpg'
+];
 
-// function addImage(imageUrl, index) {
-//   const img = document.createElement('img');
-//   img.src = imageUrl;
-//   img.alt = '';
-//   img.className = `slide object-cover   ${
-//     index === current ? 'opacity-100' : 'opacity-50'
-//   }`;
-//   slide.appendChild(img);
-// }
+const smallImages = [
+    'images/carousel/argylle/argylle-274x593.jpg',
+    'images/carousel/franklin/274x593.jpg',
+    'images/carousel/friday-night-baseball/baseball-274x593.jpg',
+    'images/carousel/masters-of-the-air/master-274x593.jpg',
+    'images/carousel/mls-season-pass/mls-season-pass-274x593.jpg',
+    'images/carousel/morning-show/274x593.jpg',
+    'images/carousel/palm-royale/274x593.jpg',
+    'images/carousel/sugar/sugar-274x593.jpg',
+    'images/carousel/ted-lasso/ted-lasso-274x593.jpg'
+];
 
-// function addPills() {
-//   cardArray.forEach((_, index) => {
-//     const btn = document.createElement('button');
-//     btn.className = `w-2 h-2 rounded-full ${
-//       index === current ? 'bg-[#ccc]' : 'bg-[#666]'
-//     }`;
-//     btn.dataset.index = index; 
-//     btn.addEventListener('click', () => {
-//       current = index;
-//       updateSlides();
-//       slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
-//     });
-//     pill.appendChild(btn);
-//   });
-// }
+let current = 1;
+let isAnimating = false;
+let pill = document.querySelector('.pill');
+let slide = document.querySelector('.carousel');
+let cardArray = getCardArray();
+const gap = 16; 
+let slideWidth = 0; 
 
-// function updateSlides() {
-//   const slides = document.querySelectorAll('.slide');
-//   const pills = document.querySelectorAll('.pill button');
+function getCardArray() {
+  if (window.matchMedia('(min-width: 1920px)').matches) {
+      return largeImages;
+  } else if (window.matchMedia('(min-width: 834px)').matches) {
+      return mediumImages;
+  } else {
+      return smallImages;
+  }
+}
 
-//   slides.forEach((slide, index) => {
-//     slide.className = `slide object-cover   duration-300 ${
-//       index === current ? 'opacity-100' : 'opacity-50'
-//     }`;
-//   });
+window.addEventListener('resize', () => {
+  const newCardArray = getCardArray();
+    if (cardArray !== newCardArray) {
+      cardArray = newCardArray;
+      slide.innerHTML = '';
+      pill.innerHTML = '';
+      cloneSlides();
+      addPills();
+      updateSlides();
+    } else {
+      updateSlides();
+    }
+});
 
-//   pills.forEach((pill, index) => {
-//     pill.className = `w-2 h-2 rounded-full ${
-//       index === current ? 'bg-[#ccc]' : 'bg-[#666]'
-//     }`;
-//   });
-// }
+function addImage(imageUrl, index) {
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    img.className = `slide object-cover ${index === current ? 'no-blur' : 'blur'}`;
+    slide.appendChild(img);
+}
 
-// const onPrevClick = () => {
-//   if (current > 0) {
-//     current--;
-//     updateSlides();
-//     slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
-//   }
-// };
+function addPills() {
+  cardArray.forEach((_, index) => {
+      const btn = document.createElement('button');
+      btn.dataset.index = index + 1;
+      btn.addEventListener('click', () => {
+          if (!isAnimating) {
+              current = index + 1;
+              updateSlides();
+          }
+      });
+      pill.appendChild(btn);
+  });
+}
 
-// const onNextClick = () => {
-//   if (current < cardArray.length - 1) {
-//     current++;
-//     updateSlides();
-//     slide.style.transform = `translateX(calc(-${current} * 100% - ${current}rem))`;
-//   }
-// };
+function cloneSlides() {
+  const firstSlide = cardArray[0];
+  const lastSlide = cardArray[cardArray.length - 1];
 
-// cardArray.forEach((url, index) => addImage(url, index));
-// addPills();
+  addImage(lastSlide, -1);
+  cardArray.forEach((url, index) => addImage(url, index + 1));
+  addImage(firstSlide, cardArray.length);
+}
 
+function updateSlides() {
+    isAnimating = true;
+    const slides = document.querySelectorAll('.slide');
+    slideWidth = slides[0].clientWidth;
+
+    const totalSlideWidth = slideWidth + (2 * gap); 
+    const offset = -(current * totalSlideWidth - totalSlideWidth);
+
+    slide.style.transition = 'transform 0.3s';
+    slide.style.transform = `translateX(${offset}px)`;
+
+    slides.forEach((slide, index) => {
+      slide.className = `slide object-cover duration-300 ${index === current ? 'no-blur' : 'blur'}`;
+    });
+
+    const pills = document.querySelectorAll('.pill button');
+    pills.forEach((pill, index) => {
+      pill.className = `${index === current - 1 ? 'color1' : 'color2'}`;
+    });
+
+    slide.addEventListener('transitionend', () => {
+      isAnimating = false;
+      if (current === 0) {
+        slide.style.transition = 'none';
+        current = cardArray.length;
+        slide.style.transform = `translateX(calc(-${current} * ${totalSlideWidth}px - ${totalSlideWidth / 3}px)`;
+      } else if (current === cardArray.length + 1) {
+        slide.style.transition = 'none';
+        current = 1;
+        slide.style.transform = `translateX(calc(-${current} * ${totalSlideWidth}px - ${totalSlideWidth / 3}px)`;
+      }
+    }, { once: true });
+}
+
+const prevSlide = () => {
+  if (!isAnimating) {
+    current--;
+    updateSlides();
+  }
+};
+const nextSlide = () => {
+  if (!isAnimating) {
+    current++;
+    updateSlides();
+  }
+};
+slide.innerHTML = '';
+cloneSlides();
+addPills();
+updateSlides();

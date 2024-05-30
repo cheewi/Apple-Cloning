@@ -27,8 +27,8 @@ class itemCard01 extends HTMLElement {
                         <h3 class="mt-2 font-light text-[19px] des:text-[28px]">${subHeading}</h3>
                     </div>
                     <div class="gap-3">
-                        <button class="${button} mt-[19px] py-[10px] px-[20px] font-light bg-[#0071e3] text-white border-none rounded-full hover:bg-[#2b86e2] transition duration-200 ease-in-out text-[14px]">Learn more</button>
-                        <button class="${button} ${buttonDisplay} font-light mt-[19px] py-[10px] px-[20px] border-[1px] border-solid border-[#0071e3] text-[#0071e3] rounded-full text-[14px] tab:text-[17px] duration-200 ease-in-out hover:bg-[#0071e3] hover:text-white">${buttonDetail}</button>
+                        <button class="${button} mt-[19px] py-[10px] px-[20px] font-light bg-[#0071e3] text-white border-none rounded-full hover:bg-[#2b86e2] transition duration-200 ease-in-out]">Learn more</button>
+                        <button class="${button} ${buttonDisplay} font-light mt-[19px] py-[10px] px-[20px] border-[1px] border-solid border-[#0071e3] text-[#0071e3] rounded-full duration-200 ease-in-out hover:bg-[#0071e3] hover:text-white">${buttonDetail}</button>
                     </div>
                 </div>
             </div>
@@ -68,8 +68,8 @@ class itemCard02 extends HTMLElement {
                         <h3 class="mt-2 font-light text-[19px] des:text-[28px]">${subHeading}</h3>
                     </div>
                     <div class="gap-3">
-                        <button class="mt-[19px] py-[10px] px-[20px] font-light bg-[#0071e3] text-white border-none rounded-full hover:bg-[#2b86e2] transition duration-200 ease-in-out text-[14px]">${buttonDetail1}</button>
-                        <button class="font-light mt-[19px] py-[10px] px-[20px] border-[1px] border-solid border-[#0071e3] text-[#0071e3] rounded-full text-[14px]duration-200 ease-in-out hover:bg-[#0071e3] hover:text-white ${buttonDisplay}">${buttonDetail2}</button>
+                        <button class="mt-[19px] py-[10px] px-[20px] font-light bg-[#0071e3] text-white border-none rounded-full hover:bg-[#2b86e2] transition duration-200 ease-in-out text-[12px] tab:text-[14px] ">${buttonDetail1}</button>
+                        <button class="font-light mt-[19px] py-[10px] px-[20px] border-[1px] border-solid border-[#0071e3] text-[#0071e3] rounded-full text-[12px] tab:text-[14px] duration-200 ease-in-out hover:bg-[#0071e3] hover:text-white ${buttonDisplay}">${buttonDetail2}</button>
                     </div>
                 </div>
             </div>
