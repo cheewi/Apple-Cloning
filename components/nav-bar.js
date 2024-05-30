@@ -59,7 +59,7 @@ const createHeaderComponent = () => {
                     <a href="#" class="text-[#1d1d1f] font-semibold leading-tight text-3xl p-0 tab:text-[12px] tab:px-2 tab:py-2 tab:flex tab:font-normal">Accessories</a>
                 </li>
                 <li>
-                    <a href="#" class="text-[#1d1d1f] font-semibold leading-tight text-3xl p-0 tab:text-[12px] tab:px-2 tab:py-2 tab:flex tab:font-normal">Support</a>
+                    <a href="src/pages/support.html" class="text-[#1d1d1f] font-semibold leading-tight text-3xl p-0 tab:text-[12px] tab:px-2 tab:py-2 tab:flex tab:font-normal">Support</a>
                 </li>
                 <li class=" hidden tab:flex">
                     <img src="/images/icons/search.svg" class="flex w-12 h-12">

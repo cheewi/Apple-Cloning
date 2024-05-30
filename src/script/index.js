@@ -72,7 +72,7 @@ window.addEventListener('resize', () => {
 function addImage(imageUrl, index) {
     const img = document.createElement('img');
     img.src = imageUrl;
-    img.className = `slide object-cover ${index === current ? 'no-blur' : 'blur'}`;
+    img.className = `slide object-cover ${index === current ? 'no-blr' : 'blr'}`;
     slide.appendChild(img);
 }
 
@@ -111,7 +111,7 @@ function updateSlides() {
     slide.style.transform = `translateX(${offset}px)`;
 
     slides.forEach((slide, index) => {
-      slide.className = `slide object-cover duration-300 ${index === current ? 'no-blur' : 'blur'}`;
+      slide.className = `slide object-cover duration-300 ${index === current ? 'no-blr' : 'blr'}`;
     });
 
     const pills = document.querySelectorAll('.pill button');
