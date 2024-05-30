@@ -71,7 +71,13 @@ const createHeaderComponent = () => {
         </nav>
     `;
 };
-
+document.addEventListener('DOMContentLoaded', () => {
+    const selectElement = (element) => document.querySelector(element);
+    const hamburger = selectElement('.hamburger')
+    hamburger.addEventListener('click', () => {
+    selectElement('nav').classList.toggle('active')
+  })
+});
 class headerComponent extends HTMLElement {
     constructor() {
         super()
