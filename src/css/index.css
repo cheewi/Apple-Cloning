@@ -17,10 +17,11 @@
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);
         
     }
-z
+
     .active .line-bottom { 
         transform: rotate(-45deg);
         transition: transform .3192s .1s cubic-bezier(.04, .04, .12, .96);
+        margin-top: 8px;
     }
     .nav-smaller-hidden { 
         transition: opacity 1.5s;
@@ -56,10 +57,11 @@ z
     }
 }
 
-.blur {
+.blr { 
     opacity: 0.5;
 }
-.no-blur {
+
+.no-blr { 
     opacity: 1;
 }
 .pill button {
