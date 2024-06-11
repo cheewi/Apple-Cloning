@@ -554,6 +554,52 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 833px) {
+  .container {
+    max-width: 833px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -1245,6 +1291,19 @@ video {
   line-height: 1rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-\[500\] {
   font-weight: 500;
 }
@@ -1519,6 +1578,18 @@ video {
     font-size: 56px;
   }
 
+  .tab\:text-\[244px\] {
+    font-size: 244px;
+  }
+
+  .tab\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .tab\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .tab\:font-normal {
     font-weight: 400;
   }
@@ -1647,5 +1718,9 @@ video {
 
   .des\:text-\[28px\] {
     font-size: 28px;
+  }
+
+  .des\:text-\[24px\] {
+    font-size: 24px;
   }
 }
