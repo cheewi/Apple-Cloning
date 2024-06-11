@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
     <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/nav-bar.css">
+    <link rel="stylesheet" href="./src/css/index.css">
     <script src="./src/script/index.js" defer></script>
     <script src="./components/nav-bar.js" defer></script>
     <script src="components/hero-card.js" defer></script>
     <script src="./components/auto-scroll.js"></script>
     <script src="./components/footer.js" defer></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
     <!-- NAV BAR SECTION -->
     <nav-bar></nav-bar>
@@ -37,7 +39,7 @@
     </section>
 
     <!-- CAROUSEL SECTION -->
-    <section class="flex flex-col w-full items-center justify-between mt-2">
+    <section class="flex flex-col w-full items-center justify-between mt-2 overflow-x-hidden">
         <div class="relative flex w-full items-center justify-center group">
             <div class="btn-container flex absolute justify-between z-10 w-full h-full group-hover:opacity-100 duration-300 ease-in-out items-center">
                 <button onclick="prevSlide()" class="w-8 h-8 tab:w-40 tab:h-full tab:opacity-0 opacity-70 tab:hover:opacity-0 hover:opacity-100 text-[#666]">
