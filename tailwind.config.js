@@ -17,7 +17,13 @@ module.exports = {
       padding : 
       { 
         '2.5' : '10px'
-      }
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
+      transitionDuration: {
+        '400': '400ms',
+      },
     },
   },
   plugins: [],
