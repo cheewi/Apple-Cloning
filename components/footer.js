@@ -1,9 +1,9 @@
 const createfooterComponent = () => { 
     return `
 <footer class="footer bg-gray-100">
-    <div class="footer-container max-w-[980px] px-6 mx-auto text-xs text-[#0000008F] min-w-[320px]">
+    <div class="footer-container max-w-[980px] px-4 mx-auto text-xs text-[#0000008F] min-w-[320px]">
         <div class="inner-footer-container pt-[17px]">
-            <ul class="pr-5" class="pt-5 pb-3">
+            <ul class="pt-5 pb-3"">
                 <li class="pb-3">
                     <span>
                         1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on ful class="pr-5"l value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.

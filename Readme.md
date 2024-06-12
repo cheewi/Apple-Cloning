@@ -83,13 +83,71 @@ COMMIT PREFIXES
 **e.g : Merge: merging into the release branch with the bugfix/homepage branch**
 
 --- PROJECT DETAIL --- 
+# PROJECT DETAILS
+
+## [APPLE.COM](http://APPLE.COM) CLONE …
+
+My personal project will be a re-creation of the
+
+ [Apple.com](http://Apple.com) website , the recreation includes the 
+
+following pages : 
+
+1. Homepage : https://www.apple.com/
+2. Store : https://www.apple.com/store
+3. Support : https://support.apple.com/
+
+## PROTOTYPE, SCREEN AND FIGMA FLOW …
+
+### PROTOTYPE …
+
+The three [Apple.com](http://Apple.com) pages I will be prototyped with wireframes,
+
+ using [Figma.com](http://Figma.com) , the prototypes will be created according 
+
+to two resolutions : 
+
+- Phone: 658 x 1024
+- Desktop : 1920 x 1024
+
+### SCREEN …
+
+The three [Apple.com](http://Apple.com) pages I will be re-created using UI Screens 
+
+created using [Figma.com](http://Figma.com) , the screens will be created according 
+
+to two resolutions : 
+
+- Phone : 658 x 1024
+- Desktop : 1920 x 1024
+
+### FIGMA FLOW …
+
+The three [Apple.com](http://Apple.com) pages will consist of elements of the Figma flow, being linked from one page to another created using [Figma.com](http://Figma.com) prototypes and interactions on the three UI screens as well as the wire-frames. 
+
+Along with the Figma flow, there will be an Information Architecture (IA) bored tthat depicts the different pages and their linked and, or sub-pages and how they are connected in the form of diagrams. 
+
 ## GRID CODING SYSTEM …
 
 The [apple.com](http://apple.com) clone will consist of the following break-point, following the gridding system as follows : 
 
 - Phone: 658 x 1024
-- Tablet : 833 X 1240
+- Tablet : 1024 X 1240
 - Desktop : 1920 x 1024
 
 The responsiveness of the website will be broken down and adjusted to the three resolution according to the gridding system.
 
+## PROJECT HAND-BOOK…
+
+Project handbook : Consists of the link to my figma UI protoype, Figma Ui screen , as well as , my Figma IA
+
+[PROJECT HAND-BOOK](https://www.notion.so/PROJECT-HAND-BOOK-f2fff38ce59a4895ad5dfe3eae3753f3?pvs=21)
+
+--- PROJECT HANDBOOK --- 
+## [APPLE.COM](http://APPLE.COM) UI PROTOTYPE AND SCREEN…
+
+[SCREEN AND PROTOYYPE](https://www.figma.com/design/gYBWj0ist9vGbj1JZj1O5w/Apple.com-UI-Prototypes-%26-Screens?node-id=0%3A1&t=R48E9eqKGQ0xP53C-1)
+
+## [APPLE.COM](http://APPLE.COM) INFORMATION ARCHITECTURE …
+
+[INFORMATION ARCHITECTURE](https://www.figma.com/board/1QSjZIOSo6KHoA4GsqHcHD/Apple.com-IA?node-id=0%3A1&t=l96i7R9zV2ZBDy9K-1)
